@@ -1,74 +1,20 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+Documentation:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Steps I Took:
+1. To integrate the API from huggingface, I researched API usage and went through several trial-and-error phases. Before this assignment, I had never worked with APIs before, but I was determined to learn how to use APIs in React because I know I'll be doing that for my final project. I read through several sites that explained how software interacts with APIs and what the typical process for that looks like. Another source I looked through was the professor's starter code, but it was written in Python while I wanted to implement it using React. 
 
-## Available Scripts
+2. After analyzing/comparing the explanations/content from all of these sources, I went with the general response, result/await response, useState, useEffect, and return result code structure. 
 
-In the project directory, you can run:
+3. For the detailed parameters from huggingface, I started with the text generation format, then realized that it auto-completes a prompt/question. After looking through more detailed parameters, I went with the correct question answering task format and logged the results to my console to double-check that everything was working properly.
 
-### `npm start`
+As for the actual output of my program, it generates a creative "Hello World" text because it gives the message "helloooo world," which has extra letters for emphasis and lowercase letters. I gave the AI a couple examples of creative Hello World messages, which it used to modify and generative its own AI.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Instructions:
+1. Clone my repository.
+2. Open my repository in your desired code editor.
+3. Replace the API key with yours in App.js.
+4. Run my code in your desired web browser using the npm start terminal command.
+5. View the generative API's output on my site.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# api-assignment
->>>>>>> 25efdabb372dec9694f0ea2aa70aa843f7964ee8
+Reflection:
+Through this experience, I learned a lot about generative AI. The main challenge I faced was OpenAI's restrictive access. From all the resources I looked at, they didn't mention that users probably have to pay to use their generative AI programs. I tried so many variations of my code only to keep getting server processing errors. After reading the console, Googling the errors, and even attending my Web Development professor's Office Hours, I found out that I most likely needed to pay to use their services. That's when I moved to the huggingface AI tool and got to read more detailed explanations and suggestions for detailed parameters code formats. It has so many capabilities with text and image generation - I'm definitely excited to explore and implement them in my final project. Our group will use generative AI to synthesize and analyze information about recipes and time to produce suggestions about recipes that optimize users' time and ingredients.

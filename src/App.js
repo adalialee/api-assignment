@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+// import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
+import fetch from "node-fetch";
+
+async function query(data) {
+  const response = await fetch(
+      "https://api-inference.huggingface.co/models/deepset/roberta-base-squad2",
+      {
+          headers: { Authorization: `Bearer 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` },
+          method: "POST",
+          body: JSON.stringify(data),
+      }
+  );
+  const result = await response.json();
+  return result;
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [answer, setAnswer] = useState("");
+
+  useEffect(() => {
+    query({inputs:{question:"Give an example of a creative Hello World",
+      context:"Here are some examples creative Hello Worlds: helloooo world! HELLO world?? hey there"}}).then((response) => {
+      console.log(JSON.stringify(response));
+      setAnswer(response.answer);
+  });
+  }, [])
+
+  return <div>{answer}</div>
 }
 
 export default App;
