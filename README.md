@@ -12,7 +12,7 @@ As for the actual output of my program, it generates a creative "Hello World" te
 Instructions:
 1. Clone my repository.
 2. Open my repository in your desired code editor.
-3. Replace the API key with yours in App.js.
+3. Replace the API key with yours in App.js (I revoked/invalidated my key, so nothing should show up until you add yours in.)
 4. Run my code in your desired web browser using the npm start terminal command.
 5. View the generative API's output on my site.
 
